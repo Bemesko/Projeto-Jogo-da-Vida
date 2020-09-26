@@ -4,4 +4,4 @@ Autômato celular criado em C como um trabalho de programação no início de 20
 ## Desenvolvedores
 [Bernardo Mesko](https://github.com/Bemesko)
 
-Bárbara mafra
+Bárbara Mafra
