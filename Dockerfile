@@ -1,9 +1,7 @@
-FROM gcc:12.2.0
-
-COPY JogoDaVida.c /opt/JogoDaVida.c
+FROM gcc:12.2.0 as compile
 
 WORKDIR /opt
-
+COPY JogoDaVida.c /opt/JogoDaVida.c
 RUN gcc -o JogoDaVida JogoDaVida.c
 
-ENTRYPOINT ["./JogoDaVida"]
+ENTRYPOINT ["/opt/JogoDaVida"]
